@@ -8,4 +8,11 @@
 
 animals = ["dog", "turtle", "lion", "tiger", "bear", "toucan"]
 
-p animals.select! {|animal| animal.to_s.start_with?("t") }
+# p animals.select! {|animal| animal.to_s.start_with?("t") }
+
+animals.each do |animal|
+    if animal.start_with?("t")
+        puts animal
+    end
+end
+
