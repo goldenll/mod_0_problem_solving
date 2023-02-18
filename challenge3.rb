@@ -8,4 +8,10 @@
 
 words = ["king", "queen", "going", "hello"]
 
-p words.select! {|word| word.to_s.include?("ing") }
+# p words.select! {|word| word.to_s.include?("ing") }
+
+words.each do |word|
+    if word.include?("ing")
+        puts word
+    end
+end
